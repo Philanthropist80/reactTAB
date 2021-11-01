@@ -1,0 +1,268 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 15px;
+}
+
+div {
+  padding: 5px 5px 5px 5px;
+}
+
+.page {
+  position: relative;
+  text-align: left;
+}
+
+.page__header {
+  background-color: #333;
+  color: white;
+}
+
+.page__search {
+  padding-top: 10px;
+}
+
+.page__actions {
+  text-align: right;
+}
+
+.page__error {
+  position: absolute;
+  padding: 5px;
+  color: #fff;
+  background-color: #f44336;
+}
+
+.persons {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.persons__item {
+  /* display: inline-flex; */
+  margin: 1px;
+}
+
+.person {
+  position: relative;
+  /* z-index: 20; */
+  overflow: hidden;
+  background-color: #fff;
+  border: 1px solid gray;
+  cursor: pointer;
+  border-radius: 5px;
+  padding-left: 20px;
+  box-sizing: content-box;
+}
+
+.person__sprite {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: 10; */
+  border: none;
+  background-color: transparent;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.person,
+.person__sprite {
+  width: auto;
+  height: 50px;
+}
+
+.person__name {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  /* z-index: 20; */
+  margin: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  text-align: center;
+  font-size: 14px;
+  pointer-events: none;
+}
+
+.leftDiv {
+  padding: 5px;
+  float: left;
+}
+
+.rightDiv {
+  padding: 5px;
+  float: right;
+}
+
+.deletePerson {
+  border: 0px solid gray;
+  border-radius: 2px;
+  position: absolute;
+  top: -5px;
+  left: 0px;
+  color: rgb(214, 212, 212);
+}
+
+.title {
+  color: rgb(97, 94, 94);
+  /* font-size: 16px; */
+}
+
+.subtitle {
+  color: rgb(197, 197, 197);
+  font-size: 12px;
+}
+
+.icon {
+  color: rgb(97, 94, 94);
+}
+
+.imgRound {
+  background-color: rgb(236, 235, 234);
+  border: 1px solid gray;
+  border-radius: 25px;
+  width: 40px;
+  height: 40px;
+  padding-top: 8px;
+  text-align: center;
+}
+
+.listImage {
+  width: 40px;
+  height: 40px;
+  border-radius: 25px;
+}
+
+/*********** Form Classes **************/
+
+.modalForm {
+  padding: 0;
+}
+
+.form {
+  display: flex;
+  margin: 0;
+}
+
+.form-field {
+  margin: 1em;
+}
+
+.form-field-error {
+  margin-right: 1em;
+  font-size: 0.8em;
+  color: red;
+}
+
+label span {
+  margin-right: 0.5em;
+}
+
+button {
+  align-self: center;
+  margin: 1em;
+}
+
+/*********** MODAL Classes *************/
+
+.modalStyle {
+  top: '50%';
+  left: '50%';
+  right: 'auto';
+  bottom: 'auto';
+  margin-right: '-50%';
+  transform: 'translate(-50%, -50%)';
+  width: '35%';
+  padding: '0';
+}
+
+.modalHeader {
+  display: flex;
+  border-bottom: 1px solid gray;
+  background-color: rgb(240, 236, 236);
+}
+
+.modalTitle {
+  width: 95%;
+}
+
+.modalCloseX {
+  text-align: right;
+  width: 5%;
+  cursor: pointer;
+}
+
+.modalMainTop {
+  text-align: center;
+  border-bottom: 1px solid rgb(209, 209, 209);
+  padding: 25px;
+}
+
+.modalInitial {
+  background-color: rgb(236, 235, 234);
+  display: inline-block;
+  font-size: 2rem;
+  text-align: center;
+  border: 1px solid gray;
+  border-radius: 40px;
+  padding-top: 15px;
+  width: 80px;
+  height: 80px;
+}
+
+.modalImage {
+  display: inline-block;
+  border-radius: 40px;
+  width: 80px;
+  height: 80px;
+}
+
+.modalName {
+  font-weight: 700;
+}
+
+.modalPhone {
+  color: rgb(111, 202, 152);
+  font-size: 0.8rem;
+}
+
+.modalMainOtherDetail {
+  color: gray;
+  font-size: 0.8rem;
+  padding-bottom: 50px;
+}
+
+.modalOtherDetailTitleValueContainer {
+  display: flex;
+  margin: 0;
+}
+
+.modalOtherDetailTitle {
+  width: 25%;
+  text-align: right;
+  color: rgb(121, 120, 120);
+}
+.modalOtherDetailValue {
+  width: 75%;
+  text-align: left;
+  color: rgb(199, 193, 193);
+}
+
+.modalFooter {
+  border-top: 1px solid gray;
+  text-align: right;
+  background-color: rgb(240, 236, 236);
+}
+
+@media (min-width: 992px) {
+  .person,
+  .person__sprite {
+    width: auto;
+    height: 50px;
+  }
+}

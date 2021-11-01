@@ -1,0 +1,44 @@
+{
+  "name": "reactPro",
+  "version": "1.0.0",
+  "private": true,
+  "author": "Taimoor Adil Badshah <taimurad@hotmail.com>",
+  "homepage": "https://github.com/Philanthropist80/reactPro",
+  "dependencies": {
+    "bootstrap": "4.3.1",
+    "formik": "1.5.4",
+    "net-browserify": "^0.2.4",
+    "react": "16.8.6",
+    "react-dom": "16.8.6",
+    "react-icons": "3.6.1",
+    "react-modal": "3.8.1",
+    "react-redux": "7.0.2",
+    "redis": "^3.1.2",
+    "redux": "4.0.1",
+    "redux-thunk": "2.3.0"
+  },
+  "devDependencies": {
+    "husky": "2.1.0",
+    "lint-staged": "8.1.5",
+    "prettier": "1.17.0",
+    "react-scripts": "3.0.0",
+    "redux-logger": "3.0.6"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,css}": [
+      "prettier --write",
+      "git add"
+    ]
+  }
+}
