@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "author": "Taimoor Adil Badshah <taimurad@hotmail.com>",
-  "homepage": "https://github.com/Philanthropist80/reactPro",
+  "homepage": "https://github.com/Philanthropist80/reactTAB",
   "dependencies": {
     "bootstrap": "5.1.3",
     "formik": "2.2.9",
